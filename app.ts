@@ -11,6 +11,9 @@ const number2 = 2.8;
 
 const results = number1 + number2;
 
+
+// Person object declaration
+
 const person = {
   name: "Narendra",
   hobbies: ["research", "cooking", "learning new things"],
@@ -22,3 +25,5 @@ for (const hobby of person.hobbies) {
 }
 
 console.log(results);
+
+// Tuple is like a key value pair 
