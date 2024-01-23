@@ -1,29 +1,26 @@
 console.log("HELLO WORLD this is just an example..");
 
-function add(number1, number2) {
-  let name = "Narendra";
-  console.log(name);
-  return number1 + number2;
+function add234(a: number, b: number, callback: (num: number) => void) {
+  const added = a + b;
+  console.log(added);
 }
 
-const number1 = 5;
-const number2 = 2.8;
-
-const results = number1 + number2;
-
-
-// Person object declaration
-
-const person = {
-  name: "Narendra",
-  hobbies: ["research", "cooking", "learning new things"],
-  age: 25,
-};
-
-for (const hobby of person.hobbies) {
-  console.log(hobby);
+function addabfun(ab: number) {
+  console.log(ab);
 }
 
-console.log(results);
+add234(10, 20, addabfun);
 
-// Tuple is like a key value pair 
+function callabtest(a: number): number {
+  console.log(a);
+  return a;
+}
+
+const person = { name: 'narendra', age: 30 };
+
+console.log(person);
+const personObj = { ...person };
+console.log(personObj);
+person.name = 'ramesh';
+console.log(person);
+console.log(personObj);
